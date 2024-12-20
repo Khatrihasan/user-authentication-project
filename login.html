@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e3f2fd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 25px 35px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 320px;
+            text-align: center;
+        }
+
+        form input {
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        form input:focus {
+            border-color: #2196f3;
+            outline: none;
+        }
+
+        form input[type="submit"] {
+            background-color: #2196f3;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #1769aa;
+        }
+    </style>
+</head>
+<body>
+    <form action="home.html">
+        <input type="email" placeholder="Enter your email" id="loginemail" required>
+        <input type="password" placeholder="Enter your password" id="loginpassword" required>
+        <input type="submit" value="Login" onclick="login()">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
